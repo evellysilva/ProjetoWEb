@@ -28,6 +28,6 @@ npm install
 
 3. **Inicie o JSON Server**:
 
-npm run start:json-server
+node server.js
 
 4. **Abra o Arquivo `index.html`** no seu navegador para visualizar o site.
