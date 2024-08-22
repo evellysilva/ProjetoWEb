@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias para Foco de Incêndio</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="menu">
+            <h1>Denúncias para Foco de Incêndio</h1>
+        </div>
+    </header>
+
+    <!-- Main content da página -->
+    <main>
+        <!-- Seção para concientização de focos de incêndio -->
+        <section id="conscientizacao">
+            <div class="banner">
+                <img src="img/bannerCentral.PNG" alt="Banner Impacto dos incêndios" />
+            </div>
+        </section>
+        
+        <br><br><br>
+
+        <!-- Seção para monitoramento de focos de incêndio -->
+        <div class="container">
+            <section id="info">
+                <h2>Monitoramento de Focos de Incêndio</h2>
+                <!-- Botão para carregar dados dos focos de incêndio -->
+                <button id="loadData">Carregar Dados</button>
+                <!-- Div onde os dados dos focos de incêndio serão exibidos -->
+                <div id="data"></div>
+                <!-- Botão para acessar o site do INPE -->
+                <a href="https://terrabrasilis.dpi.inpe.br/queimadas/situacao-atual/situacao_atual/" target="_blank">
+                    <button id="situacao" type="button">Ver Situação Atual no INPE</button>
+                </a>
+            </section>
+
+            <!-- Seção para informar um novo foco de incêndio -->
+            <section id="report">
+                <h2>Informar Novo Foco de Incêndio</h2>
+                <form id="reportForm">
+                    <input type="number" id="latitude" placeholder="Latitude" step="any" required>
+                    <input type="number" id="longitude" placeholder="Longitude" step="any" required>
+                    <input type="text" id="intensidade" placeholder="Intensidade do Foco" required>
+                    <input type="date" id="dataFoco" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensagem"></div>
+            </section>
+        </div>
+        <br><br><br>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 - Denúncias para Foco de Incêndio</p>
+    </footer>
+
+    <!-- Links para os arquivos JavaScript externos -->
+    <script src="script/script.js"></script>
+    <script src="script/data.js"></script>
+</body>
+</html>

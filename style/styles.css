@@ -1,0 +1,166 @@
+/* Define a fonte padrão e remove margens e preenchimentos padrão. Faz com que o body ocupe pelo menos a altura da tela e use flexbox para layout. */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+    background-image: url("img/foto-renderizada-em-3d-de-um-rio-com-arvores-e-um-ceu-com-nuvens_1158030-61043.jpg"); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-color: #00200a; /* Cor de fundo de fallback caso a imagem não carregue */
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+    background-color: #02fd2470; /* Define a cor de fundo do cabeçalho */
+    color: #b4fded; /* Define a cor do texto no cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Adiciona preenchimento vertical ao cabeçalho */
+}
+
+/* Remove margens do elemento h1 */
+h1 {
+    margin: 0; /* Remove margens padrão do h1 */
+}
+
+/* Estilos para a seção principal da página */
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço disponível entre header e footer */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+#conscientizacao {
+    position: relative;
+    background-image: url('img/bannerCentral.PNG'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Altura da seção, ajustável conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Opcional, se você quiser que as seções ocupem todo o espaço disponível */
+}
+section{
+    flex: 1; /* As seções vão ocupar a mesma quantidade de espaço */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px solid #1272127e;
+    margin: 10px; /* Espaço entre as seções */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+/* Estilos para a seção de informações */
+#info, #report {
+    
+    background-color: #1d4e2b; /* Define a cor de fundo da seção */
+   
+}
+h2{
+    color: #fff;
+}
+
+/* Estilos para os cartões de foco de incêndio */
+.foco-item {
+    background-color: #c4ffce; /* Define a cor de fundo do cartão */
+    border: 1px solid #cdffc9; /* Define a borda do cartão */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao cartão */
+    padding: 15px; /* Adiciona preenchimento ao redor do conteúdo do cartão */
+    margin-bottom: 15px; /* Adiciona margem inferior entre os cartões */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao redor do cartão */
+}
+
+/* Estilos para os parágrafos dentro dos cartões */
+.foco-item p {
+    margin: 5px 0; /* Adiciona margem superior e inferior aos parágrafos */
+}
+
+/* Estilos para as labels dentro dos cartões */
+.foco-item .label {
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilos para o botão de carregar dados */
+#loadData {
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto do botão */
+    margin-top: 20px; /* Adiciona margem superior ao botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    background-color: #1a704fce; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+}
+#situacao{
+    padding: 10px 20px; /* Adiciona preenchimento ao redor do texto do botão */
+    margin-top: 20px; /* Adiciona margem superior ao botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    background-color: #1a704fce; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */ 
+}
+
+/* Estilos para o contêiner de dados */
+#data {
+    margin-top: 20px; /* Adiciona margem superior ao contêiner de dados */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilos para a seção de relatório */
+
+
+/* Estilos para o formulário de relatório */
+#reportForm {
+    display: flex; /* Usa flexbox para layout do formulário */
+    flex-direction: column; /* Organiza os itens do formulário em uma coluna */
+}
+
+/* Estilos para os campos de entrada e o botão do formulário */
+#reportForm input, #reportForm button {
+    margin-bottom: 10px; /* Adiciona margem inferior aos campos e botão */
+    padding: 10px; /* Adiciona preenchimento ao redor do texto */
+    font-size: 1em; /* Define o tamanho da fonte */
+    border: 1px solid #ccc; /* Define a borda dos campos */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos campos e botão */
+}
+
+/* Estilos específicos para o botão do formulário */
+#reportForm button {
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    background-color: #1a704fce; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+}
+
+/* Estilos para a mensagem exibida após o envio do formulário */
+#mensagem {
+    margin-top: 20px; /* Adiciona margem superior à mensagem */
+    color: #28a745; /* Define a cor do texto da mensagem */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #445342; /* Define a cor de fundo do rodapé */
+    color: #fff; /* Define a cor do texto no rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona preenchimento ao redor do conteúdo */
+    position: relative; /* Define o posicionamento relativo para o rodapé */
+    height: 60px; /* Define uma altura fixa para o rodapé */
+    width: 100%; /* Faz com que o rodapé ocupe toda a largura da página */
+    box-sizing: border-box; /* Inclui bordas e preenchimento nas dimensões do rodapé */
+    margin-top: auto; /* Faz com que o rodapé fique na parte inferior da página */
+}
+
+/* Media queries para responsividade em telas menores */
+@media (max-width: 768px) {
+    #reportForm input, #reportForm button {
+        font-size: 0.9em; /* Ajusta o tamanho da fonte para telas menores */
+    }
+}

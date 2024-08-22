@@ -1,0 +1,13 @@
+# Node modules
+/node_modules
+
+# Logs
+*.log
+
+# Configurações do sistema
+.DS_Store
+.env
+
+# Arquivos temporários
+*.tmp
+*.sw
