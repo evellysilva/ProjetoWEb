@@ -10,5 +10,11 @@
     "longitude": 123435,
     "intensidade": "24564",
     "dataFoco": "2024-08-22"
+  },
+  {
+    "latitude": 12112101,
+    "longitude": 2210221310,
+    "intensidade": "baixa",
+    "dataFoco": "2024-08-22"
   }
 ]

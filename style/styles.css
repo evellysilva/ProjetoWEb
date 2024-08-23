@@ -164,3 +164,28 @@ footer {
         font-size: 0.9em; /* Ajusta o tamanho da fonte para telas menores */
     }
 }
+/* Adicione ou atualize o CSS para a div de dados */
+#data {
+    background-color: rgb(52, 107, 55); /* Define o fundo branco */
+    color: rgb(255, 255, 255); /* Define a cor do texto para preto */
+    padding: 10px; /* Adiciona algum espaço interno */
+    border: 1px solid #1b4629; /* Adiciona uma borda leve ao redor */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    max-height: 400px; /* Define uma altura máxima para rolagem */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo for grande */
+}
+
+/* Opcional: estilos adicionais para itens da lista */
+#data ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+}
+
+#data li {
+    padding: 5px 0; /* Adiciona algum espaço entre os itens da lista */
+    border-bottom: 1px solid #395534; /* Adiciona uma linha entre os itens da lista */
+}
+
+#data li:last-child {
+    border-bottom: none; /* Remove a linha inferior do último item */
+}
